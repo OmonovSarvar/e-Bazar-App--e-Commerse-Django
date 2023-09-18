@@ -1,0 +1,55 @@
+{% extends 'mainApp/base.html' %}
+
+{% block heading %}
+<title>Detail Page</title>
+<!-- cdn fontgoogle -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Chakra+Petch:ital@0;1&family=Comfortaa&family=Gruppo&family=Poiret+One&display=swap" rel="stylesheet">
+
+<!-- cdn fontawesome -->
+<script src="https://kit.fontawesome.com/d5b5e10b1b.js" crossorigin="anonymous"></script>
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+{% endblock heading %}
+
+
+{% block content %}
+<div class="head-container">
+    <img src="{{ product.product_img.url }}" alt="" class="head-img">
+    <div class="head-info">
+        <p class="head-p">{{ product.product_name }}</p>
+        <p class="star"><i class="star fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p class="price">${{ product.price }}</p>
+        <p class="model">Model: Iphone</p>
+        
+        <p class="active">Holati: <i class="dot fa-solid fa-circle-notch">  Sotuvda bor</i> </p>
+        <button id="button-buy" type="submit" class="btn btn-outline-primary">Sotib Olish</button>
+        <button id="button like" type="submit" class="btn btn-primary">Saralarga qo'shish</button>
+        <!-- <button class="btn btn-secondary">Bosh sahifaga o'tish</button> -->
+    </div>
+
+    <div class="head-share">
+        <div class="share">
+            <p class="share-p">Tavfsiya</p>
+            <a href="" class="img-share"><img src="https://assets.asaxiy.uz/product/items/desktop/43ec517d68b6edd3015b3edc9a11367b20230915155724224092IT43sJYsL.png" alt="" class="share-img"></a>
+            <p class="share-name"><a href="" class="share-name">Hoco EW38 qora simsiz quloqchini</a></p>
+            <p class="price-share"><a class="price-share" href="">209 000 so'm </a></p>
+        </div>
+        <div class="head-card">
+            <p class="vote-text">Ovoz berishingiz mumkin!</p>
+            <p class="card-vote1"><a href=""><i class="fa-solid fa-square-check"></i> Sotib oldim</a> <a href="" class="respon">1</a></p>
+            <p class="card-vote1"><a href=""><i class="fa-solid fa-hourglass-half"></i>  Sotib olmoqchiman</a> <a href="" class="respon">1</a></p>
+            <p class="card-vote1"><a href=""><i class="fa-solid fa-thumbs-up"></i> Tavfsiya qilaman</a> <a href="" class="respon">1</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="description-product">
+    <p class="desc-info">Mahsulot ta'rifi</p>
+    <p class="desc-p">"{{ product.description }} </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{% endblock%}

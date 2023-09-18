@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+/*  index.html */
+
+
+
+/*  */
+/* detail.html */
+/* font-family: 'Baloo 2', cursive; */
+
+body {
+    background-color: rgb(230, 237, 249);
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+.head-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.head-img {
+    margin: 80px 50px;
+    width: 30%;
+    height: 450px;
+    border-radius: 14px;
+}
+
+.head-info {
+    margin: auto;
+    width: 40%;
+    height: 400px;
+    /* background-color: rgb(241, 245, 251); */
+
+}
+
+.head-p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.star {
+    color: rgb(244, 119, 88);
+    margin-bottom: 20px;
+}
+
+.price {
+    font-family: 'Chakra Petch', sans-serif;
+    color: brown;
+    font-size: 25px;
+}
+    
+.model {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.dot {
+    color: rgb(3, 174, 3);
+    margin-bottom: 30px;
+}
+
+.head-card {
+
+    margin: auto;
+}
+
+#button-buy {
+    margin-right: 10px;
+}
+
+.card-vote1 {
+    background-color: aliceblue;
+    border-radius: 14px;
+    padding: 14px 30px;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(16, 16, 77);
+
+}
+
+a:hover {
+    color: rgb(4, 114, 61);
+}
+
+.respon {
+    background-color: rgb(170, 211, 248);
+    border-radius: 10px;
+    padding: 3px 12px;
+}
+
+.share {
+    margin: 50px 40px 0 0;
+    background-color: aliceblue;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.share-p {
+    font-size: 17px;
+    font-family: 'Comfortaa', cursive; 
+    color: rgb(15, 0, 98);
+}
+
+.share-img {
+    width: 160px;
+    height: 200px;
+}
+
+.share-name {
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(0, 0, 56);
+
+}
+
+.price-share {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+
+.description-product {
+    background-color: rgb(246, 250, 253);
+    border-radius: 12px;
+    margin: 40px;
+}
+
+.desc-info {
+    font-size: 30px;
+    padding:10px 0 0 20px;
+
+}
+
+.desc-p {
+    font-size: 20px;
+    /* font-family: 'Poiret One', cursive; */
+    padding: 0 10px 10px 10px;
+}
